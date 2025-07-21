@@ -1,0 +1,250 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="bar">
+          <img src="./img/logo4.jpeg" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Mahlet Shegaw </span><br />From Bahir Dar University
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--------------about--------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./img/photo_2025-04-09_16-00-05.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As Software Engineering student at Bahir Dar University, I'm
+              driven by a genuine passion for web development and a desire to
+              create engaging and user-friendly web experiences and to slove
+              real world problems. I'm continuously seeking opportunities to
+              expand my knowledge and refine my skills in web development
+              through various online courses. I'm eager to learn and contribute
+              to a dynamic team, bringing my enthusiasm and growing skill set to
+              create impactful web solutions.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML, CSS, JS</span><br />Well structured frontend web
+                </li>
+                <li><span>React, node.js</span><br />We app Development</li>
+                <li><span>SQL</span><br />Designing and writing sql queries</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023-current</span><br />Web Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024-current</span><br />Programming Fundamentals</li>
+                <li>
+                  <span>2025-current</span><br />Artificial Intelligence
+                  Fundamentals Fundamentals
+                </li>
+                <li>
+                  <span>2025-current</span><br />Data Science Fundamentals
+                </li>
+                <li>
+                  <span>2025-current</span><br />Android Developer Fundamentals
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Build Website</h2>
+            <p>
+              Building websites involves,writing efficient code and continuously
+              updating content to create engaging and accessible online
+              platforms.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Designing websites involves creating visually appealing layouts,
+              ensuring user-friendly navigations,and provide an engaging to
+              inclusive user experience.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Programming</h2>
+            <p>
+              Programming is about writing efficient code,solving problems
+              through debugging,mastering various languages and tools, and
+              constantly learning new techniques to build secure and functional
+              applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------Portfolio-->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./img/res.jpeg" alt="" />
+            <div class="layer">
+              <h3>Restaurant web</h3>
+              <p>
+                This website provides a seamless and intuitive online
+                experience, making it easy to browse the menu, view specials,
+                and even make a reservation.
+              </p>
+              <a href="https://restaurant-web120000.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/pizza1.jpeg" alt="" />
+            <div class="layer">
+              <h3>Pizza order app</h3>
+              <p>
+                This allows users to browse the menu, customize their pizzas,
+                specify delivery or pickup options, and pay securely online.
+              </p>
+              <a href="https://pizza-order-12.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/movie2.jpeg" alt="" />
+            <div class="layer">
+              <h3>Movie Recommendation app</h3>
+              <p>
+                A movie recommendation app is a software application designed to
+                suggest movies to users based on their viewing history,
+                preferences, and other factors. The goal is to help users
+                discover movies they are likely to enjoy, saving them time and
+                effort in searching for something to watch.
+              </p>
+              <a href="https://movie-recommendation9.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!---------------Contact-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>mahletshegaw698@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone-flip"></i>+251920273298</p>
+            <div class="social-icons">
+              <a href="https://www.fb.com/l/6lp1kJRRR"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href=" https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=pyfv00t"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/mahlet-shegaw-ba8a4b261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="./img/photo_2025-04-27_23-01-49.jpg"
+              download
+              class="btn btn2"
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <i class="fa-light fa-circle-c"></i>
+        <p>2025|created & Designed By Mahlet Shegaw</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
